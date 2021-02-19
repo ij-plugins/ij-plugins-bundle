@@ -19,11 +19,13 @@ Installation
 
 ### ImageJ
 
-For [ImageJ] the IJ-Plugins Bundle is provide as a ZIP file on the [Releases] page. To install unzip the bundle the
-ImageJ plugins folder, it will create a folder named `ij-plugins`, and restart ImageJ.
+For [ImageJ] the IJ-Plugins Bundle is provide as a ZIP file on the [Releases] page. The ZIP is specific to your
+operating system. For instance for Windows 10, the name will end with "-win". To install unzip the bundle, for
+instance "ij-plugins_1.0.0-win.zip", in the ImageJ's plugins folder, it will create a folder named `ij-plugins`, and
+restart ImageJ.
 
-Note: all individual projects can be installed separately too, see their respective Releases pages. The bundle is
-intended to help to install all of them at once and remove mixed dependent JAR collisions.
+_Note_: all individual projects can be installed separately, see their respective Releases pages. The bundle is intended
+to help to install all of them at once and remove mixed dependent JAR collisions.
 
 ### FIJI
 
@@ -44,16 +46,19 @@ Steps:
 
 If you FIJI installation is using the default (for FIJI) Java 8. You may get warning when using `IJP Color Calculator`
 or `IJP Color Calibrator` plugins that may look something like this:
+
 ```
 ... javafx.fxml.FXMLLoader$ValueElement processValue
 WARNING: Loading FXML document with JavaFX API of version 10.0.1 by JavaFX runtime of version 8.0.172
 ```
+
 In general this should not impact operation of plugins. If possible, it is better to use Java 11 or newer.
 
 #### Tip: ImageJ main window may shrinks when using some plugins on Windows 10
 
 When using `IJP Color Calculator` or `IJP Color Calibrator` plugins the main ImageJ window may shrink (change size) if
 your monitor is using scaling other than 100%. This may also happen to other windows opened by ImageJ. If that happens:
+
 1. In Windows Explorer, go to your FIJI installation directory
 2. Right click on `ImageJ-win64.exe` and select "Properties"
 3. Select "Compatibility" tab and click on "Change high DPI settings"
@@ -62,6 +67,7 @@ your monitor is using scaling other than 100%. This may also happen to other win
 ![Windows DPI Settings](doc/Windows_DPI_Settings.png)
 
 
+[Releases]: https://github.com/ij-plugins/ij-plugins-bundle/releases
 
 [IJ-Plugins Update Site]: https://sites.imagej.net/IJ-Plugins/
 
