@@ -42,7 +42,16 @@ Steps:
 5. Click on `Apply changes`
 6. Restart ImageJ
 
-#### Tip: Java 8 Warning
+Tips and Troubleshooting
+------------------------
+
+### Use Java 11 or Newer
+
+IJ Plugins expect to tun with current Java distribution, version 11 or newer. While effort is made to support obsolete
+Java 8 used by FIJI/ImageJ 2 distribution, some plugins may not work correctly. Please
+see [FIJI/ImageJ 2 FAQ][FIJI Running FAQ] for the steps to use newer version of Java.
+
+### Java 8 Warning
 
 If you FIJI installation is using the default (for FIJI) Java 8. You may get warning when using `IJP Color Calculator`
 or `IJP Color Calibrator` plugins that may look something like this:
@@ -52,9 +61,10 @@ or `IJP Color Calibrator` plugins that may look something like this:
 WARNING: Loading FXML document with JavaFX API of version 10.0.1 by JavaFX runtime of version 8.0.172
 ```
 
-In general this should not impact operation of plugins. If possible, it is better to use Java 11 or newer.
+In general this should not impact operation of plugins. If possible, it is better to use Java 11 or newer. Please
+see [FIJI/ImageJ 2 FAQ][FIJI Running FAQ] for steps to use newer version of Java.
 
-#### Tip: ImageJ main window may shrinks when using some plugins on Windows 10
+### Tip: ImageJ main window may shrinks when using some plugins on Windows 10
 
 When using `IJP Color Calculator` or `IJP Color Calibrator` plugins the main ImageJ window may shrink (change size) if
 your monitor is using scaling other than 100%. This may also happen to other windows opened by ImageJ. If that happens:
@@ -74,6 +84,8 @@ your monitor is using scaling other than 100%. This may also happen to other win
 [ImageJ]:         https://imagej.nih.gov/ij/
 
 [ImageJ 2]:       http://imagej.net
+
+[FIJI Running FAQ]: https://imagej.net/Frequently_Asked_Questions.html#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F
 
 [FIJI]:           https://imagej.net/Fiji
 
