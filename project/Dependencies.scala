@@ -2,8 +2,8 @@ import sbt._
 
 // @formatter:off
 object Dependencies {
-  lazy val ijpColor             = "net.sf.ij-plugins" %% "ijp-color"              % "0.11.1"
-  lazy val ijpColorUI           = "net.sf.ij-plugins" %% "ijp-color-ui"           % "0.11.1"
+  lazy val ijpColor             = "net.sf.ij-plugins" %% "ijp-color"              % "0.11.2"
+  lazy val ijpColorUI           = "net.sf.ij-plugins" %% "ijp-color-ui"           % "0.11.2"
   lazy val ijpDebayer2sx        = "net.sf.ij-plugins" %% "ijp-debayer2sx-core"    % "1.3.0"
   lazy val ijpDebayer2sxPlugins = "net.sf.ij-plugins" %% "ijp-debayer2sx-plugins" % "1.3.0"
   lazy val ijpImageIO           = "net.sf.ij-plugins"  % "ijp_imageio"            % "2.2.0"
