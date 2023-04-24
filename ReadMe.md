@@ -64,7 +64,15 @@ WARNING: Loading FXML document with JavaFX API of version 10.0.1 by JavaFX runti
 In general this should not impact operation of plugins. If possible, it is better to use Java 11 or newer. Please
 see [FIJI/ImageJ 2 FAQ][FIJI Running FAQ] for steps to use newer version of Java.
 
-### Tip: ImageJ main window may shrinks when using some plugins on Windows 10
+Note as tested on 2023-04-23:
+
+* Use new experimental launcher: https://imagej.net/learn/launcher - tested
+  with `imagej-launcher-6.0.3-20220914.012819-46-win64.exe`
+* Download JRE 17, for instance from here: https://www.azul.com/downloads/#zulu. Installation should be
+  in `java/win64/<name>/jre`, for instance, `java/win64/zulu11.62.17-ca-jre11.0.18-win_x64/jre`. You may need to
+  create `jre` by hand and move content there (`bin`, `conf` `legal`, `lib`, ...)
+
+### Tip: ImageJ main window may shrink when using some plugins on Windows 10
 
 When using `IJP Color Calculator` or `IJP Color Calibrator` plugins the main ImageJ window may shrink (change size) if
 your monitor is using scaling other than 100%. This may also happen to other windows opened by ImageJ. If that happens:
