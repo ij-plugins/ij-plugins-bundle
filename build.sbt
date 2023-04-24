@@ -4,7 +4,7 @@ import Dependencies._
 //ThisBuild / scalaVersion := "2.13.8"
 ThisBuild / scalaVersion := "3.2.2"
 
-ThisBuild / version := "0.1.0.1-SNAPSHOT"
+ThisBuild / version := "1.3.0.1-SNAPSHOT"
 ThisBuild / organization := "net.sf.ij-plugins"
 ThisBuild / organizationName := "IJ-Plugins"
 
