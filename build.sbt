@@ -1,9 +1,8 @@
 import Dependencies._
 
 // Use FIJI Scala version
-//ThisBuild / scalaVersion := "2.12.16"
 //ThisBuild / scalaVersion := "2.13.8"
-ThisBuild / scalaVersion := "3.0.2"
+ThisBuild / scalaVersion := "3.2.2"
 
 ThisBuild / version := "0.1.0.1-SNAPSHOT"
 ThisBuild / organization := "net.sf.ij-plugins"
