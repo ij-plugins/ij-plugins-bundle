@@ -15,23 +15,26 @@ lazy val root = (project in file("."))
       Seq(
         ijpColor,
         ijpColorUI,
-          //        ijpDebayer2sx,
+        //        ijpDebayer2sx,
         ijpDebayer2sxPlugins,
         ijpToolkit,
-          ijpScalaConsolePlugins,
+        //        ijpScalaConsolePlugins,
         ijpImageIO,
         imagej,
-          scalaTest % Test
+        scalaTest % Test
       ),
     //    // Add JavaFX dependencies used by IJP-Color
     //    libraryDependencies ++= javaFXModules.map(m =>
     //      "org.openjfx" % s"javafx-$m" % javaFXVersion classifier osName
     //    ),
-      fork := true,
-      ijRuntimeSubDir := "sandbox",
-      ijPluginsSubDir := "ij-plugins",
+    //
+    resolvers += Resolver.mavenLocal,
+    //
+    fork := true,
+    ijRuntimeSubDir := "sandbox",
+    ijPluginsSubDir := "ij-plugins",
     ijCleanBeforePrepareRun := true,
-      cleanFiles += ijPluginsDir.value
+    cleanFiles += ijPluginsDir.value
   )
 
 //name := "IJ-Plugins Bundle"
