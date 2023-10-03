@@ -14,6 +14,14 @@ The bundle contains projects:
 * [IJP-ImageIO] - extends support for reading and writing images using codes implemented by Java ImageIO, for instance,
   writing compressed TIFF.
 
+_Note_: all individual projects can be installed separately, see their respective Releases pages. The bundle is intended
+to help to install all of them at once and remove mixed dependent JAR collisions.
+
+**_Note_: IJP-Color require Java 11 or newer**. 
+Both [ImageJ] and [FIJI]/[ImageJ 2] can run with Java 11 and newer. 
+If you need JavaScript support you should not use Java newer than 11.
+JavaScript is still supported in Java 11.
+
 Installation
 ------------
 
@@ -24,13 +32,13 @@ operating system. For instance for Windows 10, the name will end with "-win". To
 instance "ij-plugins_1.0.0-win.zip", in the ImageJ's plugins folder, it will create a folder named `ij-plugins`, and
 restart ImageJ.
 
-_Note_: all individual projects can be installed separately, see their respective Releases pages. The bundle is intended
-to help to install all of them at once and remove mixed dependent JAR collisions.
-
 ### FIJI
 
 In [Fiji]/[ImageJ 2] the IJ-Plugins Bundle can be installed through
 the [IJ-Plugins Update Site]: "https://sites.imagej.net/IJ-Plugins/"
+
+You will need Java 11 to use [IJP-Color] plugins. 
+Instructions for using Fiji with Java 11 and newer are at the [IJP-ImageJ-Launcher] page. 
 
 Steps:
 
@@ -47,30 +55,11 @@ Tips and Troubleshooting
 
 ### Use Java 11 or Newer
 
-IJ Plugins expect to tun with current Java distribution, version 11 or newer. While effort is made to support obsolete
-Java 8 used by FIJI/ImageJ 2 distribution, some plugins may not work correctly. Please
-see [FIJI/ImageJ 2 FAQ][FIJI Running FAQ] for the steps to use newer version of Java.
+Some of IJ Plugins expect to tun with current Java distribution, version 11 or newer. 
+While effort is made to support obsolete Java 8 used by FIJI/ImageJ 2 distribution, 
+some plugins may not work correctly. 
 
-### Java 8 Warning
-
-If you FIJI installation is using the default (for FIJI) Java 8. You may get warning when using `IJP Color Calculator`
-or `IJP Color Calibrator` plugins that may look something like this:
-
-```
-... javafx.fxml.FXMLLoader$ValueElement processValue
-WARNING: Loading FXML document with JavaFX API of version 10.0.1 by JavaFX runtime of version 8.0.172
-```
-
-In general this should not impact operation of plugins. If possible, it is better to use Java 11 or newer. Please
-see [FIJI/ImageJ 2 FAQ][FIJI Running FAQ] for steps to use newer version of Java.
-
-Note as tested on 2023-04-23:
-
-* Use new experimental launcher: https://imagej.net/learn/launcher - tested
-  with `imagej-launcher-6.0.3-20220914.012819-46-win64.exe`
-* Download JRE 17, for instance from here: https://www.azul.com/downloads/#zulu. Installation should be
-  in `java/win64/<name>/jre`, for instance, `java/win64/zulu11.62.17-ca-jre11.0.18-win_x64/jre`. You may need to
-  create `jre` by hand and move content there (`bin`, `conf` `legal`, `lib`, ...)
+[IJP-ImageJ-Launcher] page provides an updated launcher and detailed instructions how to run [FIJI]/[ImageJ 2] with Java 11 or newer.
 
 ### Tip: ImageJ main window may shrink when using some plugins on Windows 10
 
@@ -93,7 +82,7 @@ your monitor is using scaling other than 100%. This may also happen to other win
 
 [ImageJ 2]:       http://imagej.net
 
-[FIJI Running FAQ]: https://imagej.net/Frequently_Asked_Questions.html#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F
+[IJP-ImageJ-Launcher]: https://github.com/ij-plugins/ijp-imagej-launcher
 
 [FIJI]:           https://imagej.net/Fiji
 
